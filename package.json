@@ -1,0 +1,32 @@
+{
+  "name": "javascript-methods",
+  "version": "1.0.0",
+  "description": "En este repositorio encontrarás todos los métodos de Javascript para strings y arreglos.",
+  "main": "strings.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielCuSanchez/javascript-methods.git"
+  },
+  "keywords": [
+    "strings",
+    "methods",
+    "array"
+  ],
+  "author": "Daniel Cu Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielCuSanchez/javascript-methods/issues"
+  },
+  "homepage": "https://github.com/DanielCuSanchez/javascript-methods#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
