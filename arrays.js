@@ -47,6 +47,60 @@ const initArrayMethods = () => {
   console.log("push() method".magenta);
   console.log(arregloDeFrutas.push("😃"));
   console.log(arregloDeFrutas);
+
+  //Pasa dos elementos simultáneamente en la función de devolución de llamada (hasta que llega al último elemento) y devuelve un solo valor.
+
+  console.log("reduce() method".magenta);
+  console.log(arregloDeFrutas);
+  console.log(
+    "Acumulador: ",
+    arregloDeFrutas.reduce((acumulador, actual) => {
+      console.log("actual: ", actual);
+      return acumulador + actual;
+    })
+  );
+
+  //Pasa dos elementos simultáneamente en la función de devolución de llamada de derecha a izquierda (hasta que llega al último elemento) y devuelve un solo valor.
+  console.log("reduceRight() method".magenta);
+  console.log(
+    arregloDeFrutas.reduceRight((acumulador, actual) => acumulador + actual)
+  );
+
+  //Invierte los elementos de una matriz. El elemento en el último índice será el primero y el elemento en el índice 0 será el último.
+  console.log("reverse() method".magenta);
+  console.log(arregloDeFrutas);
+  console.log(arregloDeFrutas.reverse());
+
+  //Elimina el primer elemento de una matriz y devuelve ese elemento.
+  console.log("shift() method".magenta);
+  console.log(arregloDeFrutas.shift());
+
+  //Devuelve una nueva matriz con elementos de principio a fin especificados.
+  console.log("slice() method".magenta);
+  console.log(arregloDeFrutas.slice(0, 2));
+  console.log(arregloDeFrutas);
+
+  //Devuelve verdadero si al menos un elemento de esta matriz satisface la condición de la función de devolución de llamada.
+  console.log("some() method".magenta);
+  console.log(arregloDeFrutas.some((element) => element === "🍍"));
+
+  //Sorts the elements of an array.
+  console.log("sort() method".magenta);
+  console.log([1, 2, 22, 0, 2220, 55].sort((a, d) => a - d));
+
+  //Agrega y / o elimina elementos de una matriz.
+  console.log("splice() method".magenta);
+  console.log(arregloDeFrutas.splice(0, 1));
+  console.log(arregloDeFrutas);
+
+  //Devuelve una cadena que representa la matriz y sus elementos.
+  console.log("toString() method".magenta);
+  console.log(arregloDeFrutas.toString());
+
+  //Agrega uno o más elementos al frente de una matriz y devuelve la nueva longitud de la matriz.
+  console.log("unshift() method".magenta);
+  console.log(arregloDeFrutas.unshift("🍇"));
+  console.log(arregloDeFrutas);
 };
 
 module.exports = { initArrayMethods };
